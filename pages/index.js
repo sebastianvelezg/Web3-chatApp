@@ -10,18 +10,15 @@ export default function Home() {
   if (!isAuthenticated) return <Login />;
 
   return (
-    <div className="h-screen overflow-y-scroll bg-gradient-to-b from-black to-fuchsia-800 overflow-hidden">
+    <div className="h-screen overflow-y-scroll bg-gradient-to-b from-black to-indigo-600 overflow-hidden">
       <Head>
         <title>Web3 Chat</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>welcome to the app</h1>
       <div className="max-w-screen-2xl mx-auto">
         <Header />
         <Messages />
       </div>
-
-      {/* footer */}
     </div>
   );
 }
